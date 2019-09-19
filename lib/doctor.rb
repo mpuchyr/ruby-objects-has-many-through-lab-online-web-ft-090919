@@ -23,7 +23,7 @@ class Doctor
   
   def patients
     doc_appts = []
-    appointments.each {|appt| doc_appts << appt}
+    appointments.each {|appt| doc_appts << appt.patient}
     doc_appts
   end
   
