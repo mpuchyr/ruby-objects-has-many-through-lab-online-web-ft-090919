@@ -20,6 +20,12 @@ class Patient
     Appointment.all.select {|appt| appt.patient == self}
   end
   
+  def doctors
+    docs = []
+    appointments.all {|appt| docs << appt.doctor}
+    docs
+  end
+  
   
 
 end
