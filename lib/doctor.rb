@@ -1,3 +1,4 @@
+require 'prp'
 class Doctor
   attr_accessor :name
   
@@ -24,6 +25,7 @@ class Doctor
   def patients
     patients = []
     appointments.each {|appt| patients << appt.patient}
+    binding.pry
     patients
   end
   
