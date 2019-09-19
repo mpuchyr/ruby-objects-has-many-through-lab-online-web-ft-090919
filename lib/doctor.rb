@@ -1,4 +1,4 @@
-require 'prp'
+require 'pry'
 class Doctor
   attr_accessor :name
   
