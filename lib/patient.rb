@@ -21,6 +21,8 @@ class Patient
   end
   
   def doctors
-
+    doctors = []
+    appointments.each {|appt| doctors << appt.doctor}
+    doctors
   end
 end
