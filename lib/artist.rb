@@ -13,12 +13,21 @@ class Artist
     @@all
   end
   
-  def new_song(name)
-    Song.new(name, self)
+  def new_song(name, genre)
+    Song.new(name, self, genre)
   end
   
   def songs
     Songs.all.select {|song| song.artist == self}
   end
 
+  def genres
+    artist_genres = []
+    Songs.all.each do |song|
+      if song.artist == self
+        artist_genres << 
+      end
+    end
+    artist_genres
+  end
 end
