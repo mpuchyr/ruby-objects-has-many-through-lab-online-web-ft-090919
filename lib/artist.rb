@@ -24,11 +24,6 @@ class Artist
   def genres
     artist_genres = []
     songs.each {|song| artist_genres << song.genre}
-    # Song.all.each do |song|
-    #   if song.artist == self
-    #     artist_genres << song.genre
-    #   end
-    # end
     artist_genres
   end
 end
