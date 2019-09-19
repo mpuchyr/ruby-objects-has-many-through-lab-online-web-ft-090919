@@ -18,9 +18,9 @@ class Genre
   
   def artists
     song_artists = []
-    songs.each {do |song|
+    songs.each do |song|
       song_artists << song.artist
-    end}
+    end
     song_artists
   end
   
